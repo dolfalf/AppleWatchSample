@@ -40,7 +40,7 @@
 }
 
 - (IBAction)buttonTouched:(id)sender {
-    [self pushControllerWithName:@"detail" context:@"hugahuga"];
+    [self pushControllerWithName:@"detail" context:@"두둥~"];
 }
 
 @end

@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "jimin.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "jimin.png",
       "scale" : "2x"
     },
     {

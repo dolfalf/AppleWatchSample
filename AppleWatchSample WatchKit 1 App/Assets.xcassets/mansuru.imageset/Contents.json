@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "mansuru.jpg"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "mansuru.jpg",
       "scale" : "2x"
     },
     {
