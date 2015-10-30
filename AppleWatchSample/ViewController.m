@@ -22,20 +22,7 @@
     ServiceSample *service = [[ServiceSample alloc] init];
     NSString *test = [service hoge];
     
-    [self.navigationController setToolbarHidden:NO];
-    
-    UIButton *abutton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [abutton setTitle:@"aaaa" forState:UIControlStateNormal];
-    abutton.frame = CGRectMake(0, 0, 30, 30);
-    abutton.backgroundColor = [UIColor redColor];
-    
-    UIView *aView = [[UIView alloc] initWithFrame:abutton.bounds];
-    [aView addSubview:abutton];
-    
-    UIBarButtonItem *aitem = [[UIBarButtonItem alloc] initWithCustomView:aView];
-    self.navigationController.toolbarItems = @[aitem];
-    
-    NSLog(@"test - %@", test);
+    NSLog(@"%s - test[%@]", __FUNCTION__, test);
     
 }
 

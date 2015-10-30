@@ -23,15 +23,16 @@
 		BB314A101BC3925A00FF2EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB314A0F1BC3925A00FF2EDF /* Assets.xcassets */; };
 		BB314A141BC3925A00FF2EDF /* AppleWatchSample WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB3149F81BC3925A00FF2EDF /* AppleWatchSample WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB314A241BC3949700FF2EDF /* SampleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BB314A231BC3949700FF2EDF /* SampleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB314A2B1BC3949700FF2EDF /* SampleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB314A211BC3949700FF2EDF /* SampleKit.framework */; settings = {ASSET_TAGS = (); }; };
+		BB314A2B1BC3949700FF2EDF /* SampleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB314A211BC3949700FF2EDF /* SampleKit.framework */; };
 		BB314A321BC3949700FF2EDF /* SampleKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB314A311BC3949700FF2EDF /* SampleKitTests.m */; };
 		BB314A361BC3949700FF2EDF /* SampleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB314A211BC3949700FF2EDF /* SampleKit.framework */; };
 		BB314A371BC3949700FF2EDF /* SampleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB314A211BC3949700FF2EDF /* SampleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB366A461BC3B9D00062DE16 /* ServiceSample.h in Headers */ = {isa = PBXBuildFile; fileRef = BB366A441BC3B9D00062DE16 /* ServiceSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB366A471BC3B9D00062DE16 /* ServiceSample.m in Sources */ = {isa = PBXBuildFile; fileRef = BB366A451BC3B9D00062DE16 /* ServiceSample.m */; settings = {ASSET_TAGS = (); }; };
+		BB366A471BC3B9D00062DE16 /* ServiceSample.m in Sources */ = {isa = PBXBuildFile; fileRef = BB366A451BC3B9D00062DE16 /* ServiceSample.m */; };
 		BB366A481BC3BC000062DE16 /* SampleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB314A211BC3949700FF2EDF /* SampleKit.framework */; };
 		BB366A491BC3BC000062DE16 /* SampleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB314A211BC3949700FF2EDF /* SampleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BB366A4F1BC3C0230062DE16 /* InterfaceController2.m in Sources */ = {isa = PBXBuildFile; fileRef = BB366A4E1BC3C0230062DE16 /* InterfaceController2.m */; settings = {ASSET_TAGS = (); }; };
+		BB366A4F1BC3C0230062DE16 /* InterfaceController2.m in Sources */ = {isa = PBXBuildFile; fileRef = BB366A4E1BC3C0230062DE16 /* InterfaceController2.m */; };
+		BB9046171BE36DE600181E3F /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9046161BE36DE600181E3F /* GlanceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,8 @@
 		BB366A451BC3B9D00062DE16 /* ServiceSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceSample.m; sourceTree = "<group>"; };
 		BB366A4D1BC3C0230062DE16 /* InterfaceController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController2.h; sourceTree = "<group>"; };
 		BB366A4E1BC3C0230062DE16 /* InterfaceController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController2.m; sourceTree = "<group>"; };
+		BB9046151BE36DE600181E3F /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		BB9046161BE36DE600181E3F /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +304,8 @@
 				BB314A021BC3925A00FF2EDF /* Assets.xcassets */,
 				BB314A041BC3925A00FF2EDF /* Info.plist */,
 				BB3149FA1BC3925A00FF2EDF /* Supporting Files */,
+				BB9046151BE36DE600181E3F /* GlanceController.h */,
+				BB9046161BE36DE600181E3F /* GlanceController.m */,
 			);
 			path = "AppleWatchSample WatchKit 1 Extension";
 			sourceTree = "<group>";
@@ -639,6 +644,7 @@
 				BB314A011BC3925A00FF2EDF /* NotificationController.m in Sources */,
 				BB366A4F1BC3C0230062DE16 /* InterfaceController2.m in Sources */,
 				BB3149FE1BC3925A00FF2EDF /* InterfaceController.m in Sources */,
+				BB9046171BE36DE600181E3F /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +822,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleWatchSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjcode.AppleWatchSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -827,6 +834,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleWatchSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjcode.AppleWatchSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
